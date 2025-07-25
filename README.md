@@ -85,4 +85,4 @@ Below are clear setup instructions for two scenarios: (1) running the pipeline a
 
 ## Troubleshoot
 
-The code is fully functional and ready for deployment. If you are facing any kind of issue, make sure you are using the latest version of Python and the dependencies in `requirements.txt` are up-to-date
+The code is fully functional and ready for deployment. If you are facing any kind of issue, make sure you are using the latest version of Python and the dependencies in `requirements.txt` are up-to-date.
