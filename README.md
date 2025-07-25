@@ -1,3 +1,7 @@
+# Simple Multilingual Retrieval-Augmented Generation (RAG) System
+
+To know the whole thought process, along with the design & implementation of the project, check <a href="https://github.com/mdalaminmunna/Simple-Multilingual-RAG-System/blob/main/Design%20%26%20Implementation%20Report.pdf" target="_blank">Design & Implementation Report</a> with reference.
+
 # Setup Guidelines for Multilingual RAG Project
 
 Below are clear setup instructions for two scenarios: (1) running the pipeline as a command-line script without an API, and (2) deploying it as a REST API using FastAPI.
