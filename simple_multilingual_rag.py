@@ -102,7 +102,7 @@ def build_knowledge_base(pdf_path: str):
     return chunks
 
 def main():
-    # ---- Step 1: Load and chunk KB ----
+    # Load and chunk KB
     if not os.path.exists(PDF_FILE):
         print(f"ERROR: PDF file '{PDF_FILE}' not found. Place it in the script directory.")
         return
@@ -110,14 +110,14 @@ def main():
     kb_chunks = build_knowledge_base(PDF_FILE)
     print(f"Knowledgebase: {len(kb_chunks)} chunks.")
 
-    # ---- Step 2: Load multilingual embedding model ----
+    # Load multilingual embedding model
     model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
-    # ---- Step 3: Build vector DB ----
+    # Build vector DB
     kb_embeddings = embed_texts(model, kb_chunks)
     vector_db = VectorDB(kb_embeddings, kb_chunks)
 
-    # --- Step 4: Chat Loop ---
+    # Chat Loop
     print("\n==== Multilingual RAG QA ====\nType your question (English/Bangla). Ctrl+C to exit.")
     while True:
         try:
